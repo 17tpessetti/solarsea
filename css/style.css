@@ -1,7 +1,7 @@
 /*Color Codes
 Yellow: #ffcf06
 Light blue: #0c5baa
-Dark blue: #04244c
+Dark blue: #00274C
 */
 
 /*This is all for the nav*/
@@ -150,7 +150,7 @@ body {
     float: right;
 }
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 946px) {
   .nav-container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -331,6 +331,34 @@ h4{
 
 /* Main Page */
 
+#valuesheader{
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.value-card{
+  margin: 25px 0px 0px 0px;
+  padding: 30px 0px 30px 0px;
+  color: white;
+  background-color: rgb(0, 39, 76, 0.9);
+
+}
+
+.value-card h3 {
+  color: white;
+  margin: 20px 0px 20px 0px;
+}
+
+.value-card p{
+  color: white;
+  padding: 0px 25px 0px 25px;
+}
+
+.valuesimg{
+  width: 175px;
+  height: auto;
+}
+
 .team-card{
   margin: 40px 0px 10px 0px;
 }
@@ -440,7 +468,48 @@ h4{
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-size: 12pt;
     color:rgb(65, 65, 65);
+  }
+
 }
+
+@media screen and (min-width: 946px){
+
+  /* Values grid on the main page */
+
+  #mssvalues{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .value-card{
+    margin: 25px 10px 0px 10px;
+  }
+
+  #val1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  #val2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  #val3{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  #val4{
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .valuesimg{
+    width: 100px;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1200px){
@@ -467,6 +536,39 @@ h4{
     width: 400px;
     margin: 30px 30px 0px 30px;
   }
+
+/* Values grid on the main page */
+
+#mssvalues{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+}
+
+.value-card{
+  margin: 25px 10px 0px 10px;
+}
+
+#val1{
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+#val2{
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+#val3{
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+#val4{
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+
 
 /* Grid for the teams on main page */
 
