@@ -504,6 +504,13 @@ h4{
   margin: 0px 0px 0px 20px;
 }
 
+.team-card h3{
+    color: #00274C;
+    font-size: 16pt;
+    margin: 5px 0px 5px 0px;
+    font-family: 'Open Sans';
+}
+
 @media screen and (min-width: 500px){
 #chart img{
   height: 300px;
