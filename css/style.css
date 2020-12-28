@@ -447,13 +447,13 @@ h4{
 
 /* Team Page */
 
-#chart img{
+.chart img{
   height: 200px;
   width: auto;
   margin: 30px 0px 10px 0px;
 }
 
-#chart p{
+.chart p{
   font-size: 10pt;
   margin: 0px 25px 0px 25px;
 }
@@ -511,11 +511,78 @@ h4{
     font-family: 'Open Sans';
 }
 
+/* Competition Page */
+
+.comp img{
+  height: 200px;
+  width: auto;
+  margin: 30px 0px 10px 0px;
+}
+
+.chart-desc li{
+  text-align: left;
+  line-height: 1.33;
+  padding: 10px 0px 0px 0px;
+  margin: 5px 0px 0px 20px;
+}
+
+.map img{
+  width: 300px;
+  height: auto;
+  margin: 0px 0px 30px 0px;
+}
+
+.map-desc li{
+    text-align: center;
+    line-height: 1.33;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
+    list-style-type: none;
+}
+
+#map-img{
+  text-align: center;
+}
+
+.preparation-square1{
+  background-color: rgb(0, 39, 76, 0.9);
+  padding: 30px 20px 30px 20px;
+  margin: 20px 0px 0px 0px;
+}
+
+.preparation-square2{
+  background-color: rgb(0, 39, 76, 0.6);
+  padding: 30px 20px 30px 20px;
+  margin: 20px 0px 0px 0px;
+}
+
+.preparation-grid img{
+  width: 250px;
+  height: auto;
+  margin: 25px 0px 0px 0px
+}
+
+.preparation-grid h3{
+  color: white;
+}
+
 @media screen and (min-width: 500px){
-#chart img{
+.chart img{
   height: 300px;
   width: auto;
 }
+
+.comp img{
+  height: 300px;
+  width: auto;
+}
+
+.map img{
+  width: 380px;
+  height: auto;
+}
+
+
 }
 
 @media screen and (min-width: 768px){
@@ -603,6 +670,66 @@ h4{
     font-weight: bolder;
   }
 
+  /* Competition Page */
+
+  .map img{
+    width: 520px;
+    height: auto;
+  }
+  
+  .map-desc li{
+    text-align: center;
+    line-height: 1.33;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+    list-style-type: none;
+  }
+
+  .map-desc ul{
+    -webkit-column-count: 2;  /* Chrome/Opera, Safari */
+    -moz-column-count: 2; /* Mozilla Firefox */
+    column-count: 2;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .preparation-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .preparation-grid img{
+    width: 200px;
+  }
+
+  .preparation-square1{
+    margin: 0px 0px 0px 0px;
+  }
+
+  .preparation-square2{
+    margin: 0px 0px 0px 0px;
+  }
+
+  #square3{
+    background-color: rgb(0, 39, 76, 0.6);
+  }
+
+  #square4{
+    background-color: rgb(0, 39, 76, 0.9);
+  }
+
+  #square7{
+    background-color: rgb(0, 39, 76, 0.6);
+  }
+
+  #square8{
+    background-color: rgb(0, 39, 76, 0.9);
+  }
+  
 }
 
 @media screen and (min-width: 946px){
@@ -646,20 +773,20 @@ h4{
 
     /* Team Page */
 
-    #chart-grid{
+    .chart-grid{
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: auto;
       grid-column-gap: 20px;
     }
 
-    #chart-desc{
+    .chart-desc{
       grid-column: 1/2;
       grid-row: 1/2;
       align-self: center;
     }
 
-    #chart{
+    .chart{
       grid-column: 2/3;
       grid-row: 1/2;
     }
@@ -704,6 +831,24 @@ h4{
 
     #bottom-grid #faculty-card{
       margin: 30px 60px 30px 30px;
+    }
+
+    /* Competition Page */
+
+    .comp-grid{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      grid-column-gap: 20px;
+    }
+    
+    .comp-desc{
+      grid-column: 1/3;
+      align-self: center;
+    }
+    
+    .comp{
+      grid-column: 3/4;
     }
 
 }
@@ -800,7 +945,7 @@ h4{
 
 /* Team page */
 
-#chart-grid{
+.chart-grid{
   margin: 0px 100px 0px 100px;
 }
 
@@ -871,6 +1016,82 @@ grid-column: 4/5;
 #business6{
   grid-row: 2/3;
   grid-column: 3/4;
+}
+
+/* Competition Page */
+
+.comp-grid{
+  grid-template-columns: auto auto auto;
+}
+
+.comp-desc{
+  grid-column: 1/3;
+}
+
+.comp{
+  grid-column: 3/4;
+}
+
+.map-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10%;
+  margin: 30px 0px 0px 0px;
+}
+
+.map{
+  grid-column: 1/2;
+  align-self: center;
+}
+
+.map-desc{
+  grid-column: 2/3;
+}
+
+.map img{
+  width: 620px;
+  height: auto;
+}
+
+.map-desc li{
+  text-align: left;
+  line-height: 1.33;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
+  list-style-type: initial;
+  list-style-position: inside;
+}
+
+.map-desc ul{
+  -webkit-column-count: 1;  /* Chrome/Opera, Safari */
+  -moz-column-count: 1; /* Mozilla Firefox */
+  column-count: 1;
+  margin: 20px 0px 0px 10px;
+}
+
+.preparation-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin: 20px 0px 0px 0px;
+}
+
+#square3{
+  background-color: rgb(0, 39, 76, 0.9);
+}
+
+#square4{
+  background-color: rgb(0, 39, 76, 0.6);
+}
+
+#square7{
+  background-color: rgb(0, 39, 76, 0.9);
+}
+
+#square8{
+  background-color: rgb(0, 39, 76, 0.6);
 }
 
 }
