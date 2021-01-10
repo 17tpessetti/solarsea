@@ -309,18 +309,18 @@ p{
     background-color: #00274C;
 }
 
-.footer h5{
-  padding: 0px 0px 0px 0px;
-  margin: 7px 0px 20px 0px;
-  font-size: 16pt;
-}
-
 .footer-logo{
   padding: 0px 10px 0px 10px;
 }
 
-.footer p{
+.footer-description{
   margin: 12px 0px 0px 0px;
+}
+
+.footer-title{
+  padding: 0px 0px 0px 0px;
+  margin: 7px 0px 16px 0px;
+  font-size: 16pt;
 }
 
 h3{
