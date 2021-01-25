@@ -713,6 +713,18 @@ h4{
   margin: 0px 0px 20px 0px;
 }
 
+#flow-p{
+  margin-bottom: 20px;
+}
+
+.zone-card a:link{
+  text-decoration: none;
+}
+
+.zone-card a:hover{
+  text-decoration: underline;
+}
+
 .sponsor-card-no-desc{
   text-align: center;
   padding: 30px 20px 30px 20px;
@@ -1172,6 +1184,7 @@ iframe{
         align-items: center;
         justify-content: center;
         margin: 30px 10px 30px 10px;
+        height: 350px;
     }
 
     .page-grid-2{
@@ -1479,7 +1492,7 @@ grid-column: 4/5;
   margin: 20px 10px 20px 10px;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 60% 30%;
+  grid-template-rows: auto auto;
   text-align: center;
   align-items: center;
   justify-content: center;
